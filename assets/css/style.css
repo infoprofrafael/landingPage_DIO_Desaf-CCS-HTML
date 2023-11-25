@@ -1,0 +1,274 @@
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner{
+    background-image: linear-gradient(rgba(0,0,0, .6),rgba(49,168,221,.2),rgba(0,0,0, .6)
+    ) ,url(../images/banner.png);
+    text-align: center;
+    height: 600px;
+    padding-top: 60px ;
+    border-bottom: 1px solid #33A8DB80;
+}
+.banner-content{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.banner-content  h1{
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 900;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner-content p {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    width: 450px;
+}
+.banner-content .logo{
+    width: 268px;
+    height: 268px;
+    border-radius: 268px;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+
+/*  */
+
+.banner-content #register {
+    min-width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+#register:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+register:active {
+    color: #000;
+
+}
+
+#register:active:after {
+    background: transparent;
+    
+}
+
+#register:hover {
+color: #1900ff;
+background: #ffffffb7;
+    
+}
+#register:hover:before {
+    opacity: 0.2;
+    
+}
+
+#register:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/*  */
+
+
+.logo img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+   object-fit: contain;
+}
+
+.banner-content > button {
+    padding: 19px 91px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    color: rgba(49, 168, 221, 1);
+    /* background-image: linear-gradient( #3ba1cd,#1572b7); */
+    border-image-slice: 10;
+    border: 2px solid #3BA1CD;
+}
+#course-content{
+    height: 80vh;
+    
+    background: #000;
+    color: #FFF;
+}
+
+#course-content h2{
+    color: #33A8DB;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.08px;
+}
+
+#course-content p{
+    width: 792px;
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#course-content .modules-list{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+#course-content .module{
+    border-radius: 57px;
+    border: 1px solid #33A8DB;
+    background: #252525;
+    box-shadow: -2px 6px 4px 0px rgba(0, 0, 0, 0.40) inset;
+
+    display: flex;
+    width: 535px;
+    padding: 16px 127px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#course-content .module > span{
+    color: #33A8DB;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#transform-world{
+  background: url(../images/woman-code.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding : 200px;
+  border-top: 1px solid #33A8DB80;
+  border-bottom: 1px solid #33A8DB80;
+}
+
+#transform-world p {
+    font-size: 2.4rem;
+    width: 34%;
+    font-family: Raleway;
+    font-weight: bold;
+    text-transform: lowercase;
+    text-shadow: 2px 2px #33a8db;
+}
+
+#professional-challenges{
+    height: 100vh;
+    padding: 20px;
+    background: #000;
+}
+#professional-challenges > h2{
+    width: 746px;
+    color: #33A8DB;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 6.08px;
+}
+
+#professional-challenges > img{
+    width: 659px;
+    height: 429px;
+}
+
+#professional-challenges > p {
+    width: 792px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer {
+    height: 170px;
+    border-top: 1px solid #33A8DB;
+    background-image: linear-gradient(
+        180deg, 
+        rgba(51, 168, 219, 0.00) 50%, 
+        rgba(51, 168, 219, 0.20) 99.99%,
+        rgba(51, 168, 219, 0.20) 100%);
+}
+
+footer p {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+footer p a{
+    color: #33A8DB;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
